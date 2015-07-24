@@ -1,0 +1,446 @@
+<style>::selection {
+  background: #C61D23; /* Safari */
+  }
+::-moz-selection {
+  background: #C61D23; /* Firefox */
+}
+@font-face {
+  font-family: "proxima_nova";
+  src: url("styles/fonts/ProximaNova-RegWeb.woff") format("woff");
+}
+@font-face {
+  font-family: "proxima_nova_bold";
+  src: url("styles/fonts/ProximaNova-BoldWeb.woff") format("woff");
+}
+.clearIt{
+  clear:both;
+}
+.TopButton{
+    display:block;
+    width:20%;
+    background-color: #e21b23;
+    padding:0.8em;
+    text-align:center;
+    font-family: "proxima_nova_bold", verdana, helvetica, sans-serif;
+    font-size: 1.4em;
+    color:#fff;
+    margin:1em auto;
+    border-radius: 5px;
+    letter-spacing: .08em;
+}
+/*ColorVariables
+base red: #C61D23;
+mid blue:#15468f;
+light blue:#0070cd;
+light grey:#e6e7e8;
+*/
+.support-content ul{
+  margin:0px 0px;
+}
+.land_bg{
+  background:url('/ui/THAppBG.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position:center top;
+  padding:6em;
+}
+
+.support-content{
+  background-color: #ffffff;
+}
+.mid_col{
+  height:auto;
+  display:block;
+  position: relative;
+  float:left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding:2em 0 2em 0;
+  width:50%;
+}
+.ContentCopy{
+  font-family: "proxima_nova", verdana, helvetica, sans-serif;
+  font-size:1.5em;
+  text-align:left;
+  line-height: 1.3em;
+  padding:3em 1em;
+  position:relative;
+  width:90%;
+  margin:0 auto;
+}
+.sign_up_info{
+  font-family: "proxima_nova", verdana, helvetica, sans-serif;
+  font-size:1.5em;
+  text-align:left;
+  line-height: 1.3em;
+  position:relative;
+  width:90%;
+  margin:0 auto;
+  color:#173d75;
+}
+.baseWhite{
+  color:#fff;
+}
+.baseGrey{
+  color:#444;
+}
+.slantRight{
+  background:url('/ui/FirstStride_diagonal_LR.png');
+  background-position:center top;
+  background-repeat:no-repeat;
+  width:100%;
+}
+.slantLeft{
+  background:url('/ui/FirstStride_diagonal_RL_stripe.png');
+  background-position:center top;
+  background-repeat:no-repeat;
+  width:100%;
+}
+
+.intro_2{
+  font-family: "proxima_nova_bold", verdana, helvetica, sans-serif;
+  font-size:6em;
+  text-align:center;
+  color:#fff;
+  letter-spacing: .1em;
+  line-height: 1.3em;
+  position:relative;
+  width:75%;
+  margin:0 auto;
+  border-bottom-style:dotted;
+  border-bottom-width: 3px ;
+  border-bottom-color: #ea792d; 
+}
+.intro{
+  font-family: "proxima_nova_bold", verdana, helvetica, sans-serif;
+  text-align:left;
+  color:#fff;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+  position:relative;
+  width:100%;
+  margin:0 auto;
+}
+.hlogo{
+  margin:0 auto;
+  position: relative;
+  text-align: center;
+}
+.shadow{
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:    0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+box-shadow:         0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+
+}
+.btn{
+  border: 2px solid #fff;
+  padding:2em;
+  color:#fff;
+  font-family: "proxima_nova_bold", verdana, helvetica, sans-serif;
+  font-size:1.6em;
+  text-align:center;
+  letter-spacing: 0.1em;
+  width:40%;
+  padding: 0.5em;
+  margin:0 auto;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: #fff;
+  color:#e21b23;
+}
+.helpBlock{
+    width:24%;
+    display:inline-block;
+    position:relative;
+    float:left;
+    padding:1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin:0 auto;
+}
+p.centerContent{
+    display:block;
+    margin:0 auto;
+    text-align: center;
+    font-family: "proxima_nova", verdana, helvetica, sans-serif;
+    color:#555;
+    font-size: 1.3em;
+    line-height: 130%;
+    padding:0.7em;
+}
+ .stripes {
+    width:100%;
+    background-image:url('/ui/stripe_2a1.png');
+    background-repeat:repeat;
+    height:30px;
+    margin:2em 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+ }
+ .ah1{
+    font-family: "proxima_nova_bold", verdana, helvetica, sans-serif;
+    color:#fff;
+    font-size: 6em;
+    padding: 0.6em 0 0.3em 0;
+    text-align: center;
+    display:block;
+    position:relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+ }
+ .ah2{
+    font-family: "proxima_nova", verdana, helvetica, sans-serif;
+    color:#fff;
+    font-size: 1.7em;
+    line-height: 130%;
+    padding:10px 20px 10px 0;
+    letter-spacing: 0.04em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+ }
+.mobileViewButton{
+    display:block;
+    width:40%;
+    border: 2px solid #e21b23;
+    padding:0.5em;
+    text-align:center;
+    font-family: "proxima_nova_bold", verdana, helvetica, sans-serif;
+    font-size: 1.4em;
+    color:#e21b23;
+    margin:0 auto;
+    border-radius: 5px;
+    letter-spacing: .08em;
+
+}
+.mobileViewButton:hover{
+    background-color:#e21b23;
+    color:#fff;
+}
+.phone_img{
+height: auto;
+width: auto;
+margin: 0 auto;
+text-align: center;
+display: block;
+}
+img.pads{
+  padding:0 0 0 3em;
+}
+.dl_center{
+border: 2px solid rgb(255, 255, 255);
+border-radius: 5px 5px 5px 5px;
+display: block;
+height: auto;
+margin: 2em auto 0;
+padding: 1em 0 2em 0;
+position: relative;
+text-align: center;
+width: 50%;
+}
+a.noLink{
+    text-decoration: underline;
+    color:#fff;
+}
+@media screen and (max-width: 767px) {
+  .TopButton{
+    width:50%;
+  }
+.mid_col{
+  width:100%;
+  margin:0 auto;
+}
+.support-content li{
+  margin:4px 0;
+}
+img.fslogo{
+  width:100%;
+  height: auto;
+}
+.intro{
+  border-bottom-width: 0px;
+  width:100%;
+  padding:0.5em 0.5em;
+  text-align: left;
+  font-size:1.5em;
+}
+.border_left, .border_right{
+  border-left-width: 0px;
+  border-right-style: 0px;
+}
+.intro_2{
+  font-size: 3em;
+  width:100%;
+}
+span.navButton{
+  background-color: rgba(0,0,0 0);
+  padding:0;
+}
+span.navButton:hover{
+  background-color:none;
+  padding:0;
+}
+.ah1{
+  font-size: 3em;
+  line-height: 120%;
+}
+
+  a.noLink:link{
+    text-decoration: none;
+}
+    .helpBlock{
+        width:100%;
+    }
+        .mobileViewButton{
+        display:block;
+    }
+    .btn{
+      width:80%;
+    }
+    .land_bg{
+      padding: 1em;
+    }
+    img.badges{
+      display: block;
+      margin: 1em auto;
+      padding: 0;
+      position: relative;
+      text-align: center;
+      width: 50%;
+}
+.dl_center{
+  border: 2px solid rgb(255, 255, 255);
+border-radius: 5px 5px 5px 5px;
+display: block;
+height: auto;
+margin: 2em auto 0;
+padding: 1em 0;
+position: relative;
+text-align: center;
+width: 95%;
+}
+
+}</style>
+<!-- ++++++++ ++++++++ TOP NAV ++++++++ ++++++++ -->
+<div class="support-content" style="background-color:#e21b23;margin:0;">
+  <div class="land_bg">
+    <a class="noLink" name="top"></a>
+    
+<div class="row">
+            <div class="intro">
+            <div class="hlogo"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<path fill="#E01F26" d="M142,123.972c0,9.956-8.071,18.028-18.028,18.028H25.028C15.071,142,7,133.929,7,123.972V25.028
+  C7,15.071,15.071,7,25.028,7h98.945C133.929,7,142,15.071,142,25.028V123.972z"/>
+<path fill="#A31721" d="M142.652,64.48L128.2,38h-0.581L88.07,56.593l-0.129,6.425L72.003,38.046l-4.082,43.668l-7.042-5.817
+  l-5.859-21.774L21.8,62.062l51.397,80.554l43.545,0.274l-0.242-0.372l9.542,0.036c9.327-0.659,16.958-8.476,16.958-17.963V91.943
+  L142.652,64.48z"/>
+<polygon fill="#FFFFFF" points="128.2,62.067 128.2,38.338 78.23,38.338 78.23,79.581 72.155,79.581 72.155,38.384 21.878,38.384 
+  21.8,62.067 53.509,62.067 53.509,79.581 46.886,79.581 46.886,97.115 53.509,97.115 53.509,111.691 72.155,111.691 72.155,97.115 
+  78.23,97.115 78.23,111.691 96.537,111.691 96.537,97.115 103.109,97.115 103.109,79.581 96.537,79.581 96.537,62.067 "/>
+<path fill="#A31721" d="M72.155,38.384"/>
+<path fill="#FFFFFF" d="M213,89v20h-20C204,109,213,100,213,89z"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" d="M141,124.972c0,9.956-8.071,18.028-18.028,18.028
+  H24.028C14.071,143,6,134.929,6,124.972V26.028C6,16.071,14.071,8,24.028,8h98.945C132.929,8,141,16.071,141,26.028V124.972z"/>
+</svg>
+
+
+</div>
+            <!--<img class="hlogo" src="http://www.totalhockey.com/ui/appIcon_help_hero.svg">-->
+            <div class="ah1">THE NEW WAY</div><br>
+            <div class="ah2" style="text-align:center;padding:0;">The Total Hockey app provides a quick and easy way to manage your hockey life. Download the app and a free Silver <a class="noLink" href="/support/Breakaway_Rewards/pg_id/5/?&cp=thapp&source=apppage&ad=breakaway">Breakaway Rewards</a> membership is on us.</div>
+        </div>
+<div class="clearIt"></div>  
+<div class="dl_center">
+  <div class="ah2">DOWNLOAD THE APP:</div>
+  
+    <a href="https://itunes.apple.com/us/app/total-hockey/id892373816?ls=1&mt=8&cp=thapp&source=apppage&ad=applebadge" target="blank"  border="0"><img class="badges" src="/ui/apple_dl_badge.png" alt="Available on the Apple Store"></a>
+    <a href="https://play.google.com/store/apps/details?id=com.totalhockey.app&cp=thapp&source=apppage&ad=gplaybadge" target="blank" border="0">
+    <img class="badges pads" src="/ui/gplay_dl_badge.png" alt="Get it from the Google Store"></a>
+  
+</div>
+<div class="clearIt"></div>  
+  </div><!-- ++++++++Ends Row++++++++ -->
+</div><!-- ++++++++Ends land_bg++++++++ -->
+</div><!-- ++++++++Ends support-content++++++++ -->
+<div class="support-content" style="background-color:#fff;margin:0;">
+<div class="row">
+ <div class="helpBlock">
+   <p class="centerContent"><img src="/ui/earn_breakaway_icon.png"></p>
+   <p class="centerContent">Track all of your Breakaway Rewards from one place and watch as your points accumulate to your next Reward.</p>
+   <a class="noLink" href="#track"><div class="mobileViewButton">TRACK</div></a>
+ </div>
+ <div class="helpBlock">
+   <p class="centerContent"><img src="/ui/history_breakaway.png"></p>
+   <p class="centerContent">Reference what you ordered last year or look at pending shipments—all from the convenience of your smartphone.</p>
+   <a class="noLink" href="#refer"><div class="mobileViewButton">REFER</div></a>
+ </div>
+ <div class="helpBlock">
+   <p class="centerContent"><img src="/ui/app_find_store.png"></p>
+   <p class="centerContent">Easily find the nearest Total Hockey store in your area, complete with directions, store hours and phone number.</p>
+   <a class="noLink" href="#find"><div class="mobileViewButton">FIND</div></a>
+ </div>
+ <div class="helpBlock">
+   <p class="centerContent"><img src="/ui/skate_app_help.png"></p>
+   <p class="centerContent">Remember different skate-sharpening preferences with ease. The app will store them for your entire family or team.</p>
+   <a class="noLink" href="#learn"><div class="mobileViewButton">LEARN</div></a>
+ </div>
+ <div class="clearIt"></div>
+ 
+<div class="stripes"></div>
+<!-- [][][][][] ONE [][][][][] -->
+  </div><!-- ++++++++Ends Row++++++++ -->
+</div><!-- ++++++++Ends support-content++++++++ -->
+<div class="support-content" style="background-color:#e21b23;margin:0;">
+<div class="row"><a name="track"></a>
+        <div class="mid_col"><div class="ContentCopy baseWhite"><span style="font-size:1.5em;">TRACK: View & Redeem Breakaway Rewards.</span><br><p></p>
+With the Total Hockey app, your Breakaway Rewards are always with you. Simply open the app at checkout and your rewards are conveniently at hand and can be easily redeemed in-store.   <p></p>
+
+The Breakaway Rewards feature helps you visually track your progress towards your next reward and receive notification when you’ve reached the redemption threshold. Your Rewards are conveniently saved within the app, giving you quick access no matter where you are. </div></div>
+    <div class="mid_col"><img class="phone_img" src="/ui/app_main_screen.png"></div>
+<div class="clearIt"></div>
+  </div><!-- ++++++++Ends Row++++++++ -->
+</div><!-- ++++++++Ends support-content++++++++ -->
+
+
+<!-- [][][][][] TWO [][][][][] -->
+<div class="support-content" style="background-color:#cccccc;margin:0;">
+<div class="row"><a class="noLink" name="refer"></a>
+    
+    <div class="mid_col"><div class="ContentCopy baseGrey"><span style="font-size:1.5em;">REFER: My Account</span><br><p></p>Conveniently check the status of a pending order and view your order history from the convenience of your mobile phone.<p></p>
+    </div></div>
+<div class="mid_col"><img class="phone_img" src="/ui/app_history_screen.png"></div>
+<div class="clearIt"></div>
+  </div><!-- ++++++++Ends Row++++++++ -->
+</div><!-- ++++++++Ends support-content++++++++ -->
+
+<!-- [][][][][] THREE [][][][][] -->
+<div class="support-content" style="background-color:#e21b23;margin:0;">
+<div class="row"><a class="noLink" name="find"></a>
+        <div class="mid_col"><div class="ContentCopy baseWhite"><span style="font-size:1.5em;">FIND: Locate Total Hockey stores near you</span><br><p></p>Quickly locate the Total Hockey store nearest you via geo-locating. View store hours, phone numbers, store manager contact information, and more – a great feature for traveling families!<p></p>
+        </div></div>
+    <div class="mid_col"><img class="phone_img" src="/ui/app_store_screen.png"></div>
+<div class="clearIt"></div>
+  </div><!-- ++++++++Ends Row++++++++ -->
+</div><!-- ++++++++Ends support-content++++++++ -->
+
+
+<!-- [][][][][] FOUR [][][][][] -->
+<div class="support-content" style="background-color:#cccccc;margin:0;">
+<div class="row"><a class="noLink" name="learn"></a>
+    <div class="mid_col"><div class="ContentCopy baseGrey"><span style="font-size:1.5em;">LEARN: Manage Your Entire Family’s or Team’s Skate-Sharpening Profiles.</span><br><p></p>No longer mentally juggle all the skate-sharpening preferences of you or your family. With the Total Hockey app, you can add player profiles, skate names, sizes and sharpening preferences – eliminating the stress of remembering everyone’s preferences each time you need a new sharpening.<p></p>Simply open and scan the app at our state-of-the-art sharpening center and your name and profiles will be automatically pulled up on-screen, making your sharpening experience less stressful and more personal.</div></div>
+<div class="mid_col"><img class="phone_img" src="/ui/app_skate_screen.png"></div>
+<div class="clearIt"></div>
+<a class="noLink" href="#top"><div class="TopButton">Back To Top</div></div>
+  </div><!-- ++++++++Ends Row++++++++ -->
+</div><!-- ++++++++Ends support-content++++++++ -->

@@ -1,0 +1,532 @@
+<style>
+/* Standards */
+@font-face {
+  font-family: "proxima_nova";
+  src: url("styles/fonts/ProximaNova-RegWeb.woff") format("woff");
+}
+@font-face {
+  font-family: "proxima_nova_bold";
+  src: url("styles/fonts/ProximaNova-BoldWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: "proxima_nova_EC_Reg";
+  src: url("styles/fonts/ProximaNovaExCn-RegWeb.woff") format("woff");
+}
+@font-face {
+  font-family: "proxima_nova_EC_Black";
+  src: url("styles/fonts/ProximaNovaExCn-BlackWeb.woff") format("woff");
+}
+body{
+  overflow-x: hidden;
+}
+.link_style{
+  text-decoration: none;
+}
+.link_style:hover{
+  text-decoration: none;
+}
+iframe.iframe_mobile{
+  margin:0 auto;
+  display: block;
+  position:relative;
+  height:500px;
+  width:50%;
+}
+.frame_contain{
+  width:100%;
+  position:relative;
+  margin:0 auto;
+  display:block;
+
+}
+.hero_cta_2{
+	
+	border-radius: 5px;
+	margin: 0 auto;
+	
+	display: block;
+	font-family: "proxima_nova",verdana,helvetica,sans-serif;
+	font-size: 1.8em;
+	letter-spacing: 0.09em;
+	line-height: 16px;
+	padding: 0.6em 1em;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	width: 170px;
+}
+a.hero_cta_2{
+	color:#fff;
+}
+.hero_red{
+	background-color: #e21b23;
+	color: #ffffff;
+}
+.hero_white{
+	background-color: #ffffff;
+	color: #e21b23;
+
+}
+/*  Margin Spacers for individual content   */
+.spacer_top{margin-top:20px;}
+.spacer_right{margin-right: 20px;}
+.spacer_bottom{margin-bottom: 20px;}
+.spacer_left{margin-left: 20px;}
+/* reset column margin */
+.column_b, .column_c {
+  overflow: hidden;
+  float: left; 
+  display: inline;
+  box-sizing:border-box;
+}
+.image_content{
+  position:relative;
+  width:100%;
+}
+.standard_copy{
+  font-size: 1.2em;
+}
+#margintop{
+  margin-top:4em;
+}
+/* Height's for content various content boxes */
+.xsm_h{
+  height:235px;
+}
+.sm_h{
+  height:auto;
+}
+.lg_h{
+  height:660px;
+}
+.head_h{
+  height:270px;
+}
+.THS_bg{
+background-attachment: fixed;
+background-clip: border-box;
+background-color: rgba(226, 27, 33, 1);
+background-image: url("/ui/THS_2015_STL.png");
+background-origin: padding-box;
+background-position: center 309px;
+background-repeat: no-repeat;
+background-size: auto auto;
+height: 327px;
+}
+.svg_logo{
+	height:100px;
+	width:100px;
+	display:block;
+	position: relative;
+	padding:0.5em 0;
+	margin:0 auto;
+}
+.sizing_btn{
+  width:70%;
+  margin:0.5em auto;
+  text-align: center;
+  display:block;
+  position:relative;
+  color:#e21b23;
+}
+.sizing_btn:after{
+  content:url(/ui/pop_out_info.svg);
+  display: inline-block;
+  position: relative;
+  top:1px;
+}
+.TopButton {
+  background-color: #e21b23;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-family: "proxima_nova_bold",verdana,helvetica,sans-serif;
+  font-size: 1.4em;
+  letter-spacing: 0.08em;
+  margin: 1em auto;
+  padding: 0.8em;
+  text-align: center;
+  width: 20%;
+  height:auto;
+}
+.TopButton:hover{
+  background-color: #9e1318;
+  border-color:white;
+  border-style: solid;
+}
+.clearIt{
+  clear:both;
+}
+.TopButton:after{
+  content:url(/ui/white_cta.png);
+  display: inline-block;
+  position: relative;
+  top:1px;
+}
+.title_card, .sub_title{
+
+  letter-spacing: 0.09em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 3px 3px 0px rgba(195, 32, 39, 1);
+}
+.title_card{
+  font-family: "proxima_nova_EC_Black",verdana,helvetica,sans-serif;
+  font-size: 7em;
+  margin:0 auto;
+  padding:30px 0;
+}
+.sub_title{
+  font-family: "proxima_nova_EC_Reg",verdana,helvetica,sans-serif;
+  font-size: 1.9rem;
+  margin:1em auto;
+}
+
+.hero_title{
+  color: #414042;
+  font-family: "proxima_nova_boldit",verdana,helvetica,sans-serif;
+  font-size: 4em;
+  letter-spacing: 0.09em;
+  text-align: center;
+  margin:1em;
+}
+.ah1 {
+  color: #fff;
+  font-family: "proxima_nova",verdana,helvetica,sans-serif;
+  font-size: 1.8em;
+  letter-spacing: 0.01em;
+  line-height: 1.2em;
+  padding: 0.5em;
+  text-align: center;
+  margin-top: 1.5em;
+}
+span.codes{
+  background-color: #e21b23;
+  color:#fff;
+  padding:0 0.3em;
+}
+.agenda_contain{
+  height:100%;
+  width:100%;
+  display:block;
+  position:relative;
+  background-color:#000;
+}
+.agenda_dt{
+  width:100%;
+  letter-spacing: 0.09em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "proxima_nova_EC_Reg",verdana,helvetica,sans-serif;
+  font-size: 1.9rem;
+  padding:0.5em 0;
+}
+.agenda_dt img{
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding:0 0 20px 0;
+}
+span.legal{
+  letter-spacing: 0.04em;
+  font-family: "proxima_nova",verdana,helvetica,sans-serif;
+  font-size: 9px;
+  color:#fff;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  text-transform: none;
+  padding:0;
+  line-height: 0.4em;
+}
+p.agenda_time{
+  color: #fff;
+  font-family: "proxima_nova",verdana,helvetica,sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+}
+p.agenda_time:nth-child(2n){
+    font-family: "proxima_nova_EC_Reg",verdana,helvetica,sans-serif;
+    font-size: 1.3rem;
+    line-height: 1em;
+    padding:0.5em;
+  border-bottom: 3px solid #fff;
+}
+
+/* MEDIUM */
+@media screen and (min-width: 768px) and (max-width: 1019px) {
+html, body { /* prevents horizontal scroll */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.agenda_dt img{
+width:100%;
+}
+.spacer_top{margin-top:15px;}
+.spacer_right{margin-right: 15px;}
+.spacer_bottom{margin-bottom: 15px;}
+.spacer_left{margin-left: 15px;}
+.hero{
+  top:5%;
+}
+.hero_short{
+  font-size: 2.5em;
+  padding: 1em 0 0;
+}
+.sm_h{
+  height:auto;
+  float:left;
+}
+.lg_h{
+  height:482px;
+  float:left;
+}
+.xsm_h{
+  height:172px;
+}
+.overlay{
+  width:95%;
+}
+.category_wrap{
+  top:120px;
+}
+.title_card{
+  font-family: "proxima_nova_EC_Black",verdana,helvetica,sans-serif;
+  font-size: 7em;
+  margin:1em auto;
+  padding:0;
+}
+}
+/* MEDIUM */
+@media screen and (min-width: 768px) and (max-width: 1019px) {
+  .hero_title{
+    margin-top: 15px;
+  }
+  .THS_bg{
+background-attachment: local;
+background-color: #e21b23;
+background-image: url("/ui/THS_2015_STL_mob.png");
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: contain;
+height:460px;
+}
+  }
+/* NARROW */
+
+@media screen and (max-width: 768px){
+html, body { /* prevents horizontal scroll */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.ah1 {
+    font-size: 1.2em;
+}
+.hero_cta_2{
+	width:190px;
+}
+.hero_title{
+  font-size: 2.2em;
+  margin:1em 1em 0 1em;
+  padding: 0 0 1em;
+  line-height: 1.2em;
+}
+.title_card{
+  font-family: "proxima_nova_EC_Black",verdana,helvetica,sans-serif;
+  font-size: 7em;
+  margin:1em auto;
+  padding:0;
+}
+.TopButton{
+  width:85%;
+}
+.spacer_top, .spacer_right, .spacer_bottom, .spacer_left{margin:0px;}
+.column_b{
+  margin:10px 0;
+  width:100%;
+  overflow: hidden;
+  box-sizing:border-box
+}
+#margintop{
+  margin:0px;
+}
+  .image_content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  }
+.column_c {
+  margin-right: 3px;
+  margin-top: 2px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 48%;
+}
+.canvas{/* overides main style */
+  margin:0px;
+}
+.sm_h, .lg_h, .xsm_h, .head_h{
+  height:auto;
+  float:left;
+  text-align: center;
+}
+.title_card{
+  line-height: 1em;
+  font-size:5em;
+  margin:0;
+}
+.THS_bg{
+background-attachment: local;
+background-color: #e21b23;
+background-image: url("/ui/THS_2015_STL_mob.png");
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: contain;
+height:330px;
+}
+iframe.iframe_mobile{
+  width:100%;
+}
+}
+</style>
+<div class="support-content" style="margin-bottom:0px;background-color:#e21b23;">
+<div class="row">
+  <div class="column grid_12">
+        <div class="grid_12 spacer_top column_b spacer_bottom sm_h">
+        <div class="sub_title">&mdash; welcome to &mdash;</div>
+          <div class="title_card">total hockey</div>
+          	<div class="ah1">If you’re looking for the Players Bench home page, you have come to the right place. Your two favorite hockey retailers have merged, and Players Bench customers can now enjoy the same benefits they did before, as well as new advantages with Total Hockey. Read below about the many perks of shopping with Total Hockey.
+          	</div>
+        </div>
+
+
+      </div><!-- column grid_12 close -->
+</div><!-- .row close -->
+</div><!-- support content -->
+<div class="support-content" style="margin:0;background-color:#000000;">
+<div class="row">
+  <div class="column grid_12">
+    <div class="grid_12 spacer_top column_b spacer_bottom sm_h">
+    <img class="svg_logo" src="/ui/breakaway_ico_63015.svg" alt="">
+      <div class="ah1"><span style="font-size:2em;font-family:proxima_nova_EC_Black,verdana,helvetica,sans-serif;color:#e21b23;text-transform:uppercase;">breakaway rewards</span> <br><br>As a loyal member to Players Bench’s awards program, you have been automatically enrolled into Total Hockey’s Gold Breakaway Rewards Membership, which provides you with exclusive members only deals, as well as free ground shipping on orders of $75 or more. You’ll also receive free return or exchange shipping.</div>
+      <a class="link_style" href="/support/Breakaway_Rewards/pg_id/5/?cp=PlayersBench&source=SupportPage63015&ad=BreakawayRewards"><div class="hero_cta_2 hero_red">learn more</div></a>
+    </div>
+      </div><!-- column grid_12 close -->
+</div><!-- .row close -->
+</div><!-- support content -->
+<div class="support-content" style="margin:0;background-color:#1bbd1f;">
+<div class="row">
+  <div class="column grid_12">
+    <div class="grid_12 spacer_top column_b spacer_bottom sm_h">
+    <img class="svg_logo" src="/ui/HG_Logo_63015.svg" alt="">
+      <div class="ah1"><span style="font-size:2em;font-family:proxima_nova_EC_Black,verdana,helvetica,sans-serif;color:#ffffff;text-transform:uppercase;">hockey green</span><br><br>Whether you bought your stick at Players Bench, Total Hockey or somewhere else, you can return it when it breaks for $10 towards a new twig. Hockey Green is an initiative that helps keep sticks out of landfills and finds useful needs with the remaining materials. Do your part with Hockey Green today.</div>
+      <a class="link_style" href="/support/Breakaway_Rewards/pg_id/186/?cp=PlayersBench&source=SupportPage63015&ad=HockeyGreen"><div class="hero_cta_2 hero_white" style="background-color:#ffffff;color:#1bbd1f;">learn more</div></a>
+    </div>
+      </div><!-- column grid_12 close -->
+</div><!-- .row close -->
+</div><!-- support content -->
+<div class="support-content" style="background-color:#e21b23;">
+<div class="row">
+  <div class="column grid_12">
+    <div class="grid_12 spacer_top column_b spacer_bottom sm_h">
+    <img class="svg_logo" src="/ui/shopping_63015.svg" alt="">
+      <div class="ah1"><span style="font-size:2em;font-family:proxima_nova_EC_Black,verdana,helvetica,sans-serif;color:#ffffff;text-transform:uppercase;">Shopping Experience</span><br><br>Total Hockey provides you with a unique shopping experience, tailored to your specific needs. If you’re looking for skater equipment, totalhockey.com will be your home. If you’re a netminder, totalgoalie.com is your one-stop shop. Lacrosse players can visit totallacrosse.com for all lax needs. All of our brands are available at the top of each web page as well, supplying you with easy navigation between each brand.</div>
+      <a class="link_style" href="/default.aspx?cp=PlayersBench&source=SupportPage63015&ad=WelcomeToTotalHockey"><div class="hero_cta_2 hero_white" style="background-color:#ffffff;color:#e21b23;">shop now</div></a>
+    </div>
+      </div><!-- column grid_12 close -->
+</div><!-- .row close -->
+</div><!-- support content -->
+<!-- 
+<div class="support-content">
+<div class="row">
+  <div class="column grid_12">
+    <div class="grid_12 spacer_top column_b spacer_bottom sm_h">
+    <div class="clearIt"></div>
+    <div class="grid_12 column_b spacer_bottom sm_h">
+      <div class="ah1"><span style="font-size:2em;font-family:proxima_nova_EC_Black,verdana,helvetica,sans-serif;color:#000000;text-transform:uppercase;">the schedule</span></div>
+      <div class="grid_4 column_b spacer_bottom spacer_right sm_h">
+        <div class="agenda_contain spacer_bottom" style="background-color:#ffffff;">
+          <div class="agenda_dt"><img style="width:auto;" src="/ui/daysforsummit_v1-02.png"><span style="color:#000000;">Monday, April 6th</span></div>
+          <p class="agenda_time" style="color:#000000;"><b>(everyone)</b></p>
+        </div>
+        <div class="agenda_contain spacer_bottom">
+          <div class="agenda_dt"><img src="/ui/ts_m_1-02.png">11:45am</div>
+          <p class="agenda_time"><b>Lunch &ndash; Hops House 99</b></p>
+          <p class="agenda_time">Meet us in Hops House 99 at noon for a welcoming meal. You
+will be provided with a rundown of the next three days’ events.</p>
+          </div>
+        <div class="agenda_contain spacer_bottom" style="background-color:#1aa2dc;">
+          <div class="agenda_dt"><img src="/ui/ts_m_2.png" alt="">1pm</div>
+          <p class="agenda_time"><b>Bauer &ndash; Conference Center</b></p>
+          <p class="agenda_time">The three families of Bauer equipment have created a hockey powerhouse. Find out how Bauer truly Owns The Moment.</p>
+          </div>
+        <div class="agenda_contain spacer_bottom" style="background-color:#ea2026;">
+          <div class="agenda_dt" ><img src="/ui/ts_m_3.png" alt="">3:30pm</div>
+          <p class="agenda_time"><b>Warrior &ndash; Conference Center</b></p>
+          <p class="agenda_time">Warrior began building a hockey dynasty in 2005 that grows to this day. Learn the secrets of the cutting-edge hockey giant’s product.</p>
+        </div>
+        <div class="agenda_contain spacer_bottom" style="background-color:#0d499c;">
+          <div class="agenda_dt"><img src="/ui/ts_m_4.png" alt="">6:30pm (Shuttle)</div>
+          <p class="agenda_time"><b>Re-LAX &ndash; Lobby of Hotel</b></p>
+          <p class="agenda_time">Trade in your pants for shorts and prepare yourself for an evening with pro lacrosse players. Dinner. Drinks. Fun. We’ll take the field and challenge your skill set—all made possible by Warrior.</p>
+          </div>
+      </div>
+
+      <div class="grid_4 column_b spacer_bottom spacer_right sm_h">
+        <div class="agenda_contain spacer_bottom" style="background-color:#ffffff;">
+          <div class="agenda_dt"><img style="width:auto;" src="/ui/daysforsummit_v1-03.png"><span style="color:#000000;">Tuesday, April 7th</span></div>
+          <p class="agenda_time" style="color:#000000;"><b>(everyone)</b></p>
+        </div>
+        <div class="agenda_contain spacer_bottom">
+          <div class="agenda_dt"><img src="/ui/ts_t_1.png" alt="">8am</div>
+          <p class="agenda_time"><b>A Look Forward &ndash; Conference Center</b></p>
+          <p class="agenda_time">The past. The present. Mostly the future. A look at where
+we are headed and what will get us there.</p>
+        </div>
+        <div class="agenda_contain spacer_bottom" style="background-color:#165a2d;">
+          <div class="agenda_dt"><img src="/ui/ts_m_1-02.png" alt="">12:15pm</div>
+          <p class="agenda_time"><b>Lunch &ndash; Hops House 99</b></p>
+          <p class="agenda_time">You don’t need to be on the guest list to get into this MVP lunch. Head down to Hops House 99 to learn why you are one of our Most Valuable People.</p>
+        </div>
+        <div class="agenda_contain spacer_bottom" style="background-color:#f3e03f;">
+          <div class="agenda_dt"><img src="/ui/ts_t_3.png" alt="">1pm</div>
+          <p class="agenda_time"><b>Easton &ndash; Conference Center</b></p>
+          <p class="agenda_time">Equipment engineered to light the lamp and designed to create distance between you and the competition. Although ambition is only controlled by the player, Easton puts you in a position to succeed.</p>
+        </div>
+        <div class="agenda_contain spacer_bottom" style="background-color:#cf0a2c;">
+          <div class="agenda_dt"><img src="/ui/ts_t_4.png" alt="">3pm</div>
+          <p class="agenda_time"><b>CCM &ndash; Conference Center</b></p>
+          <p class="agenda_time">Hockey is not just a time-honored tradition; it’s an obsession. CCM is a company that is completely dedicated to hockey. CCM’s focus is to make the game even greater than it already is.</p>
+        </div>
+        <div class="agenda_contain spacer_bottom" style="background-color:#1a3461;">
+          <div class="agenda_dt" ><img src="/ui/ts_t_5.png" alt="">5:30pm (Shuttle)</div>
+          <p class="agenda_time"><b>Game-On &ndash; Lobby of Hotel</b></p>
+          <p class="agenda_time">You have listened. You have learned. Now it’s time to enjoy a night that shows you what St. Louis has to offer. Dress as you would for a night with friends and get ready for an entertaining evening.</p>
+        </div>
+      </div>
+        <div class="grid_4 column_b spacer_bottom sm_h">
+        <div class="agenda_contain spacer_bottom" style="background-color:#ffffff;">
+          <div class="agenda_dt"><img style="width:auto;" src="/ui/daysforsummit_v1-04.png"><span style="color:#000000;">Wednesday, April 8th</span></div>
+          <p class="agenda_time" style="color:#000000;"><b>(store staff only)</b></p>
+        </div>
+        <div class="agenda_contain spacer_bottom" style="background-color:#f05625;">
+          <div class="agenda_dt"><img src="/ui/ts_t_3.png" alt="">7am (Shuttle)</div>
+          <p class="agenda_time"><b>Easton &ndash; Lobby of Hotel</b></p>
+          <p class="agenda_time">You’ve heard the pitches and you know what the future holds. Now, it’s time to put that knowledge to the test. Grab your warm-up suit and head to the ice to check out all of the latest from Easton.</p>
+        </div>
+        <div class="agenda_contain spacer_bottom" style="background-color:#00a3d7;">
+          <div class="agenda_dt"><img src="/ui/ts_w_2.png" alt="">10am</div>
+          <p class="agenda_time"><b>We're Talking Goals &ndash; Total Hockey HQ</b></p>
+          <p class="agenda_time">Throughout the week’s events, you may find that you have questions. We encourage you to seek answers by submitting questions to <a href="mailto:summitquestions@totalhockey.com">summitquestions@totalhockey.com.</a> All questions will be addressed on Wednesday.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+      <div class="clearIt"></div>
+  </div><!-- column grid_12 close -->
+<!--</div><!-- .row close -->
+<!--</div><!-- support content -->
